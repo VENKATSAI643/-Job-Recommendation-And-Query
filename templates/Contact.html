@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #6d28d9, #3b82f6); /* Gradient background for navbar */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 0 0 10px 10px;
+        }
+        .header .navbar {
+            display: flex;
+            gap: 15px;
+        }
+        .header .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .header .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .container h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .container label {
+            font-size: 16px;
+            color: #333;
+        }
+        .container input, .container textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .container textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px; /* Adjust padding to decrease width */
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: auto; /* Ensure button width fits content */
+            align-self: flex-start; /* Align button to the left */
+        }
+        .container button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            background: linear-gradient(135deg, #6d28d9, #3b82f6); /* Gradient background for footer */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <a href="model.html">Home</a>
+            <a href="About.html">About</a>
+         
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Company Name. All rights reserved.
+    </div>
+</body>
+</html>
